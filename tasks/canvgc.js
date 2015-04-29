@@ -36,7 +36,9 @@ module.exports = function (grunt) {
 			var destPath = path.resolve(f.dest);
 			var files = grunt.file.expand(opts, f.src);
 
-			fs.mkdirSync(destPath);
+			if (!fs.existsSync(destPath)) {
+				fs.mkdirSync(destPath);
+			}
 
 			files.forEach(function (file) {
 				var basename = path.basename(file);
