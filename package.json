@@ -1,6 +1,6 @@
 {
   "name": "grunt-canvgc",
-  "description": "The best Grunt plugin ever.",
+  "description": "Grunt plugin to convert SVG to CanvasRenderingContext2D commands.",
   "version": "0.1.1",
   "homepage": "https://github.com/netbek/grunt-canvgc",
   "author": {
