@@ -24,6 +24,7 @@
     "node": ">= 0.8.0"
   },
   "scripts": {
+    "preinstall": "sudo apt-get install libcairo2-dev libgif-dev",
     "test": "grunt test"
   },
   "devDependencies": {
