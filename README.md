@@ -4,15 +4,16 @@ Grunt plugin to convert SVG to CanvasRenderingContext2D commands.
 
 ## Installation
 
-1. Install dependencies.
+* Install dependencies.
 
 Debian/Ubuntu:
 ```
 sudo apt-get install libcairo2-dev libgif-dev
 ```
 
-2. Install module:
+* Install grunt and module:
 ```
+sudo npm install -g grunt-cli
 npm install --save-dev grunt-canvgc
 ```
 
