@@ -23,6 +23,15 @@ module.exports = function (grunt) {
 
 		var done = this.async();
 		var canvgcPath = path.resolve(__dirname, '..', 'node_modules/canvgc/bin/canvgc');
+
+		if (!fs.existsSync(canvgcPath)) {
+			canvgcPath = path.resolve(__dirname, '../../', 'canvgc/bin/canvgc');
+		}
+
+		if (!fs.existsSync(canvgcPath)) {
+			grunt.log.error('Cannot find canvgc binary');
+		}
+
 		var jobs = [];
 
 		this.files.forEach(function (f) {
